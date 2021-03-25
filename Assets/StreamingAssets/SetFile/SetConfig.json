@@ -1,0 +1,9 @@
+{
+  "receiveDataStructType": 1,
+  "sendDataStructType": 1,
+  "runState": 1,
+  "isLoopGame": false,
+  "isShowUI": false,
+  "moveSpeed": 25,
+  "isShowDebug": true
+}

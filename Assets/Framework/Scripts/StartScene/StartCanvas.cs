@@ -23,7 +23,6 @@ namespace StartScene
         [SerializeField] private LogoPanel logoPanel;
         [SerializeField] private SelectScenePanel selectScenePanel;
 
-
         void Start()
         {
             logoPanel.SetActiveUI(true, () =>

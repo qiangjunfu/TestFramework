@@ -46,26 +46,9 @@ namespace FactorySystem
         private FactoryManager() { }
 
 
-        private CharacterFactory1 characterFactory1;
-        private CharacterFactory2 characterFactory2;
         private SpriteFactory spriteFactory;
 
-        public CharacterFactory1 CharacterFactory1
-        {
-            get
-            {
-                if (characterFactory1 == null) characterFactory1 = new CharacterFactory1();
-                return characterFactory1;
-            }
-        }
-        public CharacterFactory2 CharacterFactory2
-        {
-            get
-            {
-                if (characterFactory2 == null) characterFactory2 = new CharacterFactory2();
-                return characterFactory2;
-            }
-        }
+       
         public SpriteFactory SpriteFactory
         {
             get

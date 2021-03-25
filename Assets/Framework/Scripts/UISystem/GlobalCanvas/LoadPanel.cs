@@ -22,8 +22,6 @@ namespace UISystem.GlobalCanvas
     public class LoadPanel : BasePanel
     {
         [SerializeField] private Slider slider;
-        [SerializeField] private float lifeTime;
-        [SerializeField] private bool isLoadComplete;
 
 
         public void SetActiveUI(bool isShow, bool isShowSlider)
@@ -32,8 +30,6 @@ namespace UISystem.GlobalCanvas
 
             if (isShow)
             {
-                lifeTime = 0;
-                isLoadComplete = false;
                 slider.value = 0;
 
                 if (isShowSlider == false)

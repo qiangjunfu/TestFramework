@@ -19,13 +19,19 @@ namespace UIFramework
 {
     public class BasePanel : BaseUI 
     {
-        public virtual void BackStep()
+        /// <summary>
+        /// 将UI移到第一层
+        /// </summary>
+        public virtual void MoveToTop()
         {
-
+            this.transform.SetAsFirstSibling();
         }
-        public virtual void NextStep()
+        /// <summary>
+        /// 将UI移到最下层
+        /// </summary>
+        public virtual void MoveToBottom()
         {
-
+            this.transform.SetAsLastSibling();
         }
     }
 }

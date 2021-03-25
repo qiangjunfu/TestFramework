@@ -30,14 +30,14 @@ namespace UISystem.GlobalCanvas
         [SerializeField] private bool isZoom;
         [SerializeField] private float stepTime;
         private Action action;
-        private Vector3 oldSizeDelta = new Vector3(1500, 1500, 0);
-        private Vector3 newSizeDelta = new Vector3(500, 500, 0);
+        private Vector3 oldSizeDelta = new Vector3(1000, 1000, 0);
+        private Vector3 newSizeDelta = new Vector3(350, 350, 0);
         private Color oldColor = new Color(255 / 255, 0 / 255, 0 / 255, 255 / 255);
         private Color newColor = new Color(255 / 255, 0 / 255, 0 / 255, 100 / 255);
         private const int countdown = 4;
 
 
-        public void SetActiveUI(bool isShow, Action countdownAction)
+        public void SetActiveUI(bool isShow, Action countdownCallback)
         {
             SetActiveUI(isShow);
 
@@ -60,9 +60,9 @@ namespace UISystem.GlobalCanvas
                 stepTime = 0;
                 action = null;
 
-                if (countdownAction != null)
+                if (countdownCallback != null)
                 {
-                    action = countdownAction;
+                    action = countdownCallback;
                 }
             }
         }

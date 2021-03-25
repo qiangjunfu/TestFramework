@@ -1,0 +1,6 @@
+{
+  "SendIp": "10.30.207.100",
+  "SendPort": 12345,
+  "ReceiveIp": "10.30.207.199",
+  "ReceivePort": 12346
+}

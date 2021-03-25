@@ -24,7 +24,5 @@ namespace FactorySystem.Character
     public interface  ICharacterFactory
     {
         ICharacter CreateCharacter();
-        INPC CreateNPC();
-        IMonster CreateMonster();
     }
 }

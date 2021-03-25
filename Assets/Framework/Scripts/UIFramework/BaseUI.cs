@@ -17,7 +17,7 @@ using UnityEngine;
 
 namespace UIFramework
 {
-    public class BaseUI : MonoBehaviour
+    public abstract  class BaseUI : MonoBehaviour
     {
         /// <summary>
         /// 激活UI
@@ -26,19 +26,6 @@ namespace UIFramework
         {
             this.gameObject.SetActive(isShow);
         }
-        /// <summary>
-        /// 将UI移到第一层
-        /// </summary>
-        public virtual void MoveToTop()
-        {
-            this.transform.SetAsFirstSibling();
-        }
-        /// <summary>
-        /// 将UI移到最下层
-        /// </summary>
-        public virtual void MoveToBottom()
-        {
-            this.transform.SetAsLastSibling();
-        }
+  
     }
 }
